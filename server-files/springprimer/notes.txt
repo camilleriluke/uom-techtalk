@@ -1,0 +1,17 @@
+- download and install jdk 7
+  -- set the JAVA_HOME environment variable to your install directory
+  -- add jdk bin folder to PATH environment variable
+- download and install mysql & an admin interface (e.g. sqlyog community)
+  -- create a schema called sp_test
+  -- execute schema.sql found in impl/src/main/resources
+  -- create a user called monty with passeord some_pass (or edit ds.properties files to change username and password)
+  -- give SELECT, INSERT, UPDATE and DELETE privileges to monty on sp_test
+- download maven 3 
+  -- add maven bin folder to PATH environment variable
+- download tomcat 7
+- install postman app in chrome
+- run mvn install here
+- copy war file from ws/target to tomcat webapps
+  -- rename the war file to a simpler name, e.g. ws.war
+  -- use postman to GET or POST data to the REST API
+
